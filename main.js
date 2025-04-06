@@ -21,3 +21,9 @@ function receiveTipPercentageValue(value) {
     buttonSelected = Document.querySelector(`#button-${value} `)
     buttonSelected.classList.add("button-selected")
 }
+
+function removeCçassButtonSelected() {
+    if (buttonSelected !==null) {
+        buttonSelected.classList.remove
+    }
+}
