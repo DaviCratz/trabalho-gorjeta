@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>calculadora de gorjeta</title>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <header>
@@ -17,7 +18,7 @@
                 <strong>Bill</strong>
                 <div class="input-box">
                     <img src="./images/icon-dollar.svg" alt="icon dollar">
-                    <input type="number" id="bill" placeholder="0">
+                    <input oninput="receiveBillValue" type="number" id="bill" placeholder="0">
                 </div>
             </div>
 
@@ -39,7 +40,7 @@
                 
                 <div class="input-box">
                     <img src="./images/icon-person.svg" alt="icon people">
-                    <input type="number" id="people" placeholder="0">
+                    <input oninput="receiveNumberOfPeopleValue" type="number" id="people" placeholder="0">
                 </div>
 
              </div>
