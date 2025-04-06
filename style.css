@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-* {
+ 
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Space Mono", monospace;
 }
 
-:root{
+:root {
     font-size: 62.5%;
-    --jagged-ice: #c5e4e7;
-    --white: #fff;
-    --greyish-turquiose: #5E7A7D;
-    --squeeze: #f3f9fa;
-    --sherpa-blue: #00474B;
-    --beetle-green: #547878;
-    --topaz: #26C2AE;
     --regent-grey: #7F9D9F;
-    --water-leaf: #9FE8DF;
+    --jegged-ice: #C5E4E7;
+    --beetle-green: #547878;
+    --sherpa-blue: #00484b;
+    --whater-leaf: #9fe8df;
+    --squeeze: #f3f9fA;
+    --greyish-turquoise: #5E7A7D;
+    --topaz: #26C2AE;
+    --white: #FFFF;
 }
 
 body {
@@ -94,13 +94,13 @@ main {
             font-weight: 700;
         }
 
-        button:hover {
-            background: var(--water-leaf);
-            cursor:pointer;
-            transition: .3sec;
+        button:hover{
+            background: var(--whater-leaf);
+            cursor: pointer;
+            transition: .3s;
         }
 
-        .button-selected {
+        .button-selected{
             background: var(--topaz);
         }
 
@@ -123,38 +123,35 @@ main {
                 outline: 2px solid var(--topaz);
             }
         }
-    }
+    }  
 }
 
-.results {
+.results{
     background: var(--sherpa-blue);
     border-radius: 1.5rem;
     padding: 4rem 2.4rem 2.4rem;
 
     .amount,
-    .total{
+    .total {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 2.4rem;
 
-        p{
+        p {
             color: var(--white);
             font-weight: 700;
 
-            span{
+            span {
                 color: var(--regent-grey);
                 font-size: 1.3rem;
-
             }
         }
-
-        strong{
+        strong {
             color: var(--topaz);
             font-size: 3.2rem;
         }
     }
-
     button {
         width: 100%;
         font-size: 2rem;
@@ -167,20 +164,19 @@ main {
         border-radius: .5rem;
     }
 
-    button:hover{
-        background: var(--water-leaf);
-        cursor: pointer;
-        transition: .3s;
-    }
-
+        button:hover {
+            background: var(--whater-leaf);
+            cursor: pointer;
+            transition: .3s;
+        }
 }
 
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button{
     display: none;
 }
-@media(min-width: 920px) {
 
+@media(min-width: 920px) {
     header{
         margin-top: 5rem;
     }
@@ -188,30 +184,29 @@ input::-webkit-outer-spin-button{
     main{
         display: flex;
         max-width: 92rem;
-        margin-inline: auto;
+        margin-inline: auto ;
         border-radius: 2.5rem;
         padding: 4.8rem;
         gap: 4.8rem;
-    }
-    
-    section{
-        width:100%;
-    }
 
-    .info .tip div{
-        grid-template-columns: repeat(3, 1fr);
-    }
+        section{
+            width: 100%;
+        }
 
-    .results {
-        padding: 4rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        .info .tip div {
+            grid-template-columns: repeat(3, 1fr);
+        }
 
-        .amount strong,
-        .total strong {
-            font-size: 4.8rem;
+        .results {
+            padding: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
 
+            .amount strong,
+            .total strong {
+                font-size: 4.8rem;
+            }
         }
     }
 }
